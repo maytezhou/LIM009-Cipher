@@ -7,18 +7,32 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <h1>Bienvenido!</h1>
     </div>
-    
+
+    <div=id="options">
     <p>Escoge una opción</p>
     <button id="encode" >Encriptar</button>
     <button id="decode" >Desencriptar</button>
-    <input id="firstPassword" type="text"> 
-    <p>Crea una contraseña</p>
-    <input id="firstPassword" type="text" placeholder="Contraseña de Prueba">
-    <p>Crea una contraseña</p>
-    <input id="firstPassword" type="number"  min="25" max="30"placeholder="Contraseña de Prueba">
-    <input id="serDateOfBirth" type="month" min="1930-01" max="2001-03">
+    </div>
+
+    <div id="encodeScreen">
+     <p>Crea una contraseña</p>
+     <input id="firstPassword1" type="text" placeholder="Contraseña de Prueba">
+     <input id="offSet1" type="number"  min="0" max="30"placeholder="OffSet">
+    <button id="encode" >Encriptar</button>
+    </div>
+
+    <div id="decodeScreen">
+        <p>Crea una contraseña</p>
+        <input id="firstPassword2" type="text" placeholder="Contraseña de Prueba">
+        <input id="offSet2" type="number"  min="0" max="30"placeholder="OffSet">
+       <button id="decode" >Encriptar</button>
+       </div>
+
+    
+
+       
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
