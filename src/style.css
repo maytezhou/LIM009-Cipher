@@ -84,3 +84,17 @@ body {
     display: flex; 
     justify-content: center;
   }
+
+  #encodeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+     #codeScreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         }
