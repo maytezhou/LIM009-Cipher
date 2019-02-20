@@ -1,8 +1,8 @@
-window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
-  },
-  decode: () => {
-    /* Acá va tu código */
-  }
-};
+// window.cipher = {
+//   encode: () => {
+//     /* Acá va tu código */
+//   },
+//   decode: () => {
+//     /* Acá va tu código */
+//   }
+// };
