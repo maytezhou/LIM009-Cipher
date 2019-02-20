@@ -6,33 +6,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Bienvenido!</h1>
-    </div>
+      
+    
+<div id="content">
 
-    <div=id="options">
-    <p>Escoge una opción</p>
-    <button id="encode" >Encriptar</button>
-    <button id="decode" >Desencriptar</button>
-    </div>
+      <div id=welcome>
+      <h1 align="center">Bienvenido!</h1>
+      </div>
+    
+      <div id="firstscreen">
+          <input id="username" type="text" placeholder="Nombre de Usuario"><br>
+          <input id="password" type="number" placeholder="Contraseña"><br>
+          <button id="login" >Ingresar</button>
+        </div>
 
-    <div id="encodeScreen">
-     <p>Crea una contraseña</p>
-     <input id="firstPassword1" type="text" placeholder="Contraseña de Prueba">
-     <input id="offSet1" type="number"  min="0" max="30"placeholder="OffSet">
-    <button id="encode" >Encriptar</button>
+
+
+
+
+  <div=id="options">
+    <p align="center">Escoge una opción</p>
+    <button id="encode1" >Encriptar</button><br>
+    <button id="decode1" >Desencriptar</button><br>
+  </div>
+
+   <div id="encodeScreen">
+      <p align="center">Crea una contraseña</p>
+      <input id="firstpassword1" type="text" placeholder="Contraseña de Prueba">
+      <input id="offset1" type="number"  min="0" max="30"placeholder="Offset">
+      <button id="encode2" >Encriptar</button>
     </div>
 
     <div id="decodeScreen">
-        <p>Crea una contraseña</p>
-        <input id="firstPassword2" type="text" placeholder="Contraseña de Prueba">
-        <input id="offSet2" type="number"  min="0" max="30"placeholder="OffSet">
-       <button id="decode" >Encriptar</button>
-       </div>
+        <p align="center">Crea una contraseña</p>
+        <input id="firstpassword2" type="text" placeholder="Contraseña de Prueba">
+        <input id="offset2" type="number"  min="0" max="30"placeholder="Offset">
+       <button id="decode2" >Desencriptar</button>
+     </div>
+    
+</div>>
 
     
 
-       
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
