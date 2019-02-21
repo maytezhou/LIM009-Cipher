@@ -3,7 +3,7 @@ const firstScreen=document.getElementById("firstScreen");
 const optionsScreen=document.getElementById("optionsScreen");
 const encodeScreen=document.getElementById("encodeScreen");
 const decodeScreen=document.getElementById("decodeScreen");
-optionsScreen.style.display="none";
+
 encodeScreen.style.display="none";
 decodeScreen.style.display="none";
 const createAnAccount=document.getElementById("createAnAccount");

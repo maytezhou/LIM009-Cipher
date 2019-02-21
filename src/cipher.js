@@ -8,25 +8,28 @@
 // };
 
 
-const offSet1=document.getElementById("offset1");
-const offSet2=document.getElementById("offset2");
-const firstPassword1=document.getElementById("firstpassword1");
-const firstPassword2=document.getElementById("firstpassword2");
+const offSet1=document.getElementById("offSet1");
+const offSet2=document.getElementById("offSet2");
+const firstPassword1=document.getElementById("firstPassword1");
+const firstPassword2=document.getElementById("firstPassword2");
 window.cipher ={
-encode :(offset1,firstpassword1) =>{
-    var arr=[];
-     for ( let i=0;i<firstpassword1.length;i++ ) {
-    if( firstPassword1.chardCodeAt(i)>=65 && firstPassword1.charCodeAt(i)<=90)
-     arr.push(firstPassword1.fromCharCode(firstPassword1.ChardCodeAt(i)+offSet1));
-    }
-},
 
- decode :(offset2,firstpassword2) =>{
+
+ decode :(offSet2,firstPassword2) =>{
     var arr=[];
     for ( let i=0;i<firstpassword2.length;i++ ) {
-   if( firstPassword2.chardCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90)
-    arr.push(firstPassword2.fromCharCode(firstPassword2.ChardCodeAt(i)+offSet2));
+   if( firstPassword2.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
+    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet2)%26))+65);
    }
+ document.write(arr.join(""));}
 
 }
+encode :(offSet1,firstPassword1) =>{
+    var arr=[];
+    for ( let i=0;i<firstpassword1.length;i++ ) {
+   if( firstPassword2.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
+    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet2)%26))+65);
+   }
+ document.write(arr.join(""));}
+
 }
