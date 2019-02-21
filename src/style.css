@@ -10,13 +10,6 @@ body {
         font-family: 'Impact', Charcoal, sans-serif;
         color:#000000;
      }
-#content {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-  }
 
   #firstScreen {
       display: flex;
@@ -97,15 +90,7 @@ body {
   
   }
 
-    
-
-    
-
-
-
-     
-
-     #decodeScreen {
+  #decodeScreen {
         display: flex;
         justify-content: center;
         align-items: center;
