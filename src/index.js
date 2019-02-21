@@ -22,4 +22,16 @@ decode.addEventListener('click', function() {
     decodeScreen.style.display = "block"; 
 })
 
+//calling cypher.encode 
+const encode1=document.getElementById("encode1");
+encode1.addEventListener('click', function() {
+    return cipher.encode();
+})
+
+//calling cypher.decode
+const decode1=document.getElementById("decode1");
+decode1.addEventListener('click', function() {
+    return cipher.decode();
+})
+
 
