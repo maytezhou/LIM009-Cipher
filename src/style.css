@@ -18,6 +18,13 @@ body {
       flex-direction: column;
        }
 
+  #optionsscreen{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
 #createanaccount {
     border: none;
     border-radius: 6px;
@@ -29,6 +36,7 @@ body {
     margin: auto;
     display: flex; 
     justify-content: center;
+    flex-direction: column;
   }
 
   #chooseanoption {
@@ -81,19 +89,46 @@ body {
     justify-content: center;
   }
 
+  #encodebutton2  {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Impact', Charcoal, sans-serif;
+    color: #fff;
+    background-color: #ff0080;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+
+  }
+
+  #decodebutton2  {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Impact', Charcoal, sans-serif;
+    color: #fff;
+    background-color: #ff0080;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+  }
+
   #encodeScreen {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
+    margin: auto;
   
   }
 
-  #decodeScreen {
+ #decodeScreen {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+        margin: auto;
          }
