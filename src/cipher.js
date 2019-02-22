@@ -7,7 +7,7 @@
 //   }
 // };
 
-
+/*
 const offSet1=document.getElementById("offSet1");
 const offSet2=document.getElementById("offSet2");
 const firstPassword1=document.getElementById("firstPassword1");
@@ -33,3 +33,4 @@ encode :(offSet1,firstPassword1) =>{
  document.write(arr.join(""));}
 
 }
+*/
