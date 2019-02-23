@@ -1,9 +1,9 @@
 
 
-  const firstScreen=document.getElementById('firstscreen');
-  const optionsScreen=document.getElementById('optionsscreen');
-  const encodeScreen=document.getElementById('encodeScreen');
-  const decodeScreen=document.getElementById('decodescreen');
+  const firstScreen=document.getElementById('first-screen');
+  const optionsScreen=document.getElementById('options-screen');
+  const encodeScreen=document.getElementById('encode-screen');
+  const decodeScreen=document.getElementById('decode-screen');
   
   
   
@@ -12,19 +12,19 @@
   decodeScreen.style.display='none';
 
 
-const createAnAccount=document.getElementById('createanaccount');
+const createAnAccount=document.getElementById('create-an-account');
 
 createAnAccount.addEventListener('click', function() {
     firstScreen.style.display = 'none';
     optionsScreen.style.display = 'block'; 
 });
 
-const encodeButton1=document.getElementById('encodebutton1');
+const encodeButton1=document.getElementById('encode-button1');
 encodeButton1.addEventListener('click', function() {
     optionsScreen.style.display = 'none';
     encodeScreen.style.display = 'block'; 
 });
-const decodeButton1=document.getElementById('decodebutton1');
+const decodeButton1=document.getElementById('decode-button1');
 decodeButton1.addEventListener('click', function() {
     optionsScreen.style.display = 'none';
     decodeScreen.style.display = 'block'; 

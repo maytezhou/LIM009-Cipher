@@ -11,21 +11,21 @@ body {
         color:#000000;
      }
 
-  #firstscreen {
+  #first-screen {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
        }
 
-  #optionsscreen{
+  #options-screen{
     display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
   }
 
-#createanaccount {
+#create-an-account {
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
@@ -39,7 +39,7 @@ body {
     flex-direction: column;
   }
 
-  #chooseanoption {
+  #choose-an-option {
     font-family: 'Impact', Charcoal, sans-serif;
     color:#000000;
 
@@ -61,7 +61,7 @@ body {
     justify-content: center;
   }
 
-    #encodebutton1  {
+    #encode-button1  {
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
@@ -76,7 +76,7 @@ body {
   }
   
   
-  #decodebutton1  {
+  #decode-button1  {
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
@@ -89,7 +89,7 @@ body {
     justify-content: center;
   }
 
-  #encodebutton2  {
+  #encode-button2  {
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
@@ -103,7 +103,7 @@ body {
 
   }
 
-  #decodebutton2  {
+  #decode-button2  {
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
@@ -116,7 +116,7 @@ body {
     justify-content: center;
   }
 
-  #encodeScreen {
+  #encode-screen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,7 @@ body {
   
   }
 
- #decodeScreen {
+ #decode-screen {
         display: flex;
         justify-content: center;
         align-items: center;

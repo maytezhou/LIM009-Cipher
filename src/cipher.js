@@ -19,16 +19,16 @@ window.cipher ={
     var arr=[];
     for ( let i=0;i<firstpassword2.length;i++ ) {
    if( firstPassword2.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
-    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet2)%26))+65);
+    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)-offSet2)%26))+65);
    }
  document.write(arr.join(""));}
 
-}
+},
 encode :(offSet1,firstPassword1) =>{
     var arr=[];
-    for ( let i=0;i<firstpassword1.length;i++ ) {
-   if( firstPassword2.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
-    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet2)%26))+65);
+    for ( let i=0;i<firstPassword1.length;i++ ) {
+   if( firstPassword1.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
+    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet1)%26))+65);
    }
  document.write(arr.join(""));}
 
