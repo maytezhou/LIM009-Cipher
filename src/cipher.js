@@ -1,36 +1,44 @@
-// window.cipher = {
-//   encode: (offset,string) => {
-//     /* Acá va tu código */
-//   },
-//   decode: () => {
-//     /* Acá va tu código */
-//   }
-// };
 
 
-const offSet1=document.getElementById("offSet1");
-const offSet2=document.getElementById("offSet2");
-const firstPassword1=document.getElementById("firstPassword1");
-const firstPassword2=document.getElementById("firstPassword2");
+
+
+/*window.cipher = {
+  
+  encode: (offset,string) => {
+  
+ },
+ decode: () => {
+   
+   }
+ };*/
+
 window.cipher ={
 
+ 
+   encode: (passwordTest1,offSet1) => {
+     var newWord1="";
+       for ( let i=0;i<passwordTest1.length;i++ ) {
+         if (passwordTest1[i].charCodeAt()>=65 && passwordTest1[i].charCodeAt()<=90){
+           newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
+            }
+          else if (passwordTest1[i].charCodeAt()<=65 && passwordTest1[i].charCodeAt()>=90){
+            newWord1+=firstPassword1[i];
+            }
+          }
+            return newWord1; 
+        } ,
 
- decode :(offSet2,firstPassword2) =>{
-    var arr=[];
-    for ( let i=0;i<firstpassword2.length;i++ ) {
-   if( firstPassword2.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
-    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)-offSet2)%26))+65);
-   }
- document.write(arr.join(""));}
+   decode: (passwordTest2,offSet2) => {
+     var newWord2="";
+         for ( let i=0;i<passwordTest2.length;i++ ) {
+           if (passwordTest2[i].charCodeAt()>=65 && passwordTest2[i].charCodeAt()<=90){
+             newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+65);
+               }
+            else if (passwordTest2[i].charCodeAt()<=65 && passwordTest2[i].charCodeAt()>=90){
+             newWord2+=string[i];
+             }
+           }
+              return newWord2; 
+         } 
+        };
 
-},
-encode :(offSet1,firstPassword1) =>{
-    var arr=[];
-    for ( let i=0;i<firstPassword1.length;i++ ) {
-   if( firstPassword1.charCodeAt(i)>=65 && firstPassword2.charCodeAt(i)<=90){
-    arr.push(String.fromCharCode((((firstPassword2.CharCodeAt(i)-65)+offSet1)%26))+65);
-   }
- document.write(arr.join(""));}
-
-}
-*/
