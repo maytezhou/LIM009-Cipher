@@ -13,16 +13,14 @@
  };*/
 
 window.cipher ={
-
- 
    encode: (passwordTest1,offSet1) => {
      var newWord1="";
        for ( let i=0;i<passwordTest1.length;i++ ) {
          if (passwordTest1[i].charCodeAt()>=65 && passwordTest1[i].charCodeAt()<=90){
            newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
-            }
+        }
           else if (passwordTest1[i].charCodeAt()<=65 && passwordTest1[i].charCodeAt()>=90){
-            newWord1+=firstPassword1[i];
+            newWord1+=passwordTest1[i];
             }
           }
             return newWord1; 
@@ -35,7 +33,7 @@ window.cipher ={
              newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+65);
                }
             else if (passwordTest2[i].charCodeAt()<=65 && passwordTest2[i].charCodeAt()>=90){
-             newWord2+=string[i];
+             newWord2+=passwordTest2[i];
              }
            }
               return newWord2; 

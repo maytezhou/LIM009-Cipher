@@ -116,6 +116,16 @@ body {
     justify-content: center;
   }
 
+  #data-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+
+
+  }
   #encode-screen {
     display: flex;
     justify-content: center;

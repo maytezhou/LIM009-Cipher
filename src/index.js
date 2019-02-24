@@ -5,6 +5,12 @@ const firstScreen=document.getElementById('first-screen');
 const optionsScreen=document.getElementById('options-screen');
 const encodeScreen=document.getElementById('encode-screen');
 const decodeScreen=document.getElementById('decode-screen');
+const dataScreen=document.getElementById('data-screen');
+optionsScreen.style.display='none';
+encodeScreen.style.display='none';
+decodeScreen.style.display='none';
+dataScreen.style.display='none';
+  
 
  const userName=document.getElementById('user-name');
  const password=document.getElementById('password');
@@ -14,19 +20,18 @@ const decodeScreen=document.getElementById('decode-screen');
     const userNameValue=document.getElementById('user-name').value;
     const passwordValue=document.getElementById('password').value;
  console.log(userNameValue,passwordValue);
-  })
+  });
   
-   
-  optionsScreen.style.display='none';
-  encodeScreen.style.display='none';
-  decodeScreen.style.display='none';
-
-
 const createAnAccount=document.getElementById('create-an-account');
-
 createAnAccount.addEventListener('click', ()=> {
     firstScreen.style.display = 'none';
-    optionsScreen.style.display = 'block'; 
+    dataScreen.style.display = 'block'; 
+});
+
+const sentData=document.getElementById('sent-data');
+sentData.addEventListener('click', ()=>{
+dataScreen.style.display='none';
+optionsScreen.style.display='block';
 });
 
 const encodeButton1=document.getElementById('encode-button1');
@@ -51,7 +56,7 @@ encodeButton2.addEventListener('click',()=>{
     console.log(offSet1);
     cipher.encode(passwordTest1,offSet1);
     console.log(cipher.encode(passwordTest1,offSet1))
-})
+});
 
 //calling cypher.decode
 const decodeButton2=document.getElementById('decode-button2');
@@ -64,6 +69,6 @@ decodeButton2.addEventListener('click', function() {
    console.log(offSet2);
    cipher.decode(passwordTest2,offSet2);
    console.log(cipher.decode(passwordTest2,offSet2))
-})
+});
 
 
