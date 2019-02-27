@@ -1,6 +1,6 @@
 
 
-
+/* */
 const firstScreen=document.getElementById('first-screen');
 const optionsScreen=document.getElementById('options-screen');
 const encodeScreen=document.getElementById('encode-screen');
@@ -51,9 +51,9 @@ const passwordTest1=document.getElementById('password-test1');
 const offSet1=document.getElementById('offset1');
 encodeButton2.addEventListener('click',()=>{
     const passwordTest1=document.getElementById('password-test1').value;
-    console.log(passwordTest1);
-    const offSet1=document.getElementById('offset1').value;
-    console.log(offSet1);
+    console.log(typeof passwordTest1);
+    const offSet1=parseInt(document.getElementById('offset1').value);
+    console.log(typeof offSet1);
     cipher.encode(passwordTest1,offSet1);
     console.log(cipher.encode(passwordTest1,offSet1))
 });
@@ -65,10 +65,8 @@ const offSet2=document.getElementById('offset2');
 decodeButton2.addEventListener('click', function() {
    const passwordTest2=document.getElementById('password-test2').value;
    console.log(passwordTest2);
-   const offSet2=document.getElementById('offset2').value;
+   const offSet2=parseInt(document.getElementById('offset2').value);
    console.log(offSet2);
    cipher.decode(passwordTest2,offSet2);
    console.log(cipher.decode(passwordTest2,offSet2))
 });
-
-
