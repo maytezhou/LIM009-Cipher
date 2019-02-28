@@ -24,9 +24,9 @@ window.cipher ={
                    if ((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)<0){
                   newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+26)+65);
               }
-             /* if (((((passwordTest1[i].charCodeAt()-65)+offSet1)%26))>0){
+             if (((((passwordTest1[i].charCodeAt()-65)+offSet1)%26))>0){
                   newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
-              }*/
+              }
               if ((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)==0){
                   newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
               }
@@ -35,9 +35,9 @@ window.cipher ={
                 if (((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)<0){
               newWord1+=String.fromCharCode((((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)+26)+65);
              }
-               /* if (((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)>0){
+                if (((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)>0){
               newWord1+=String.fromCharCode(((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)+65);
-             }*/
+             }
            if (((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)==0){
             newWord1+=String.fromCharCode(((((passwordTest1[i].toUpperCase()).charCodeAt()-65)+offSet1)%26)+65);
              }
@@ -90,9 +90,9 @@ window.cipher ={
                 if ((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)<0){
                     newWord2+=String.fromCharCode(((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+26)+65);
                 }
-               /* if (((((passwordTest2[i].charCodeAt()-65)-offSet2)%26))>0){
+                if (((((passwordTest2[i].charCodeAt()-65)-offSet2)%26))>0){
                     newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+65);
-                }*/
+                }
                 if ((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)==0){
                     newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+65);
                 }
@@ -102,9 +102,9 @@ window.cipher ={
                   if (((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)<0){
                 newWord2+=String.fromCharCode((((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)+26)+65);
                }
-                  /*if (((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)>0){
+                  if (((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)>0){
                 newWord2+=String.fromCharCode(((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)+65);
-               }*/
+               }
              if (((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)==0){
               newWord2+=String.fromCharCode(((((passwordTest2[i].toUpperCase()).charCodeAt()-65)-offSet2)%26)+65);
                }

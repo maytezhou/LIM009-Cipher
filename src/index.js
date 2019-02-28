@@ -47,26 +47,26 @@ decodeButton1.addEventListener('click', () => {
 
 //calling cypher.encode 
 const encodeButton2=document.getElementById('encode-button2');
-/*const passwordTest1=document.getElementById('password-test1');
-const offSet1=document.getElementById('offset1');*/
+const passwordTest1=document.getElementById('password-test1');
+const offSet1=document.getElementById('offset1');
 encodeButton2.addEventListener('click',()=>{
     const passwordTest1=document.getElementById('password-test1').value;
-    /*console.log(typeof passwordTest1);*/
+    console.log(typeof passwordTest1);
     const offSet1=parseInt(document.getElementById('offset1').value);
-    /*console.log(typeof offSet1);*/
+    console.log(typeof offSet1);
     cipher.encode(passwordTest1,offSet1);
-    /*console.log(cipher.encode(passwordTest1,offSet1))*/
+    console.log(cipher.encode(passwordTest1,offSet1))
 });
 
 //calling cypher.decode
 const decodeButton2=document.getElementById('decode-button2');
-/*const passwordTest2=document.getElementById('password-test2');
-const offSet2=document.getElementById('offset2');*/
+const passwordTest2=document.getElementById('password-test2');
+const offSet2=document.getElementById('offset2');
 decodeButton2.addEventListener('click', function() {
    const passwordTest2=document.getElementById('password-test2').value;
-   /*console.log(passwordTest2);*/
+   console.log(passwordTest2);
    const offSet2=parseInt(document.getElementById('offset2').value);
-   /*console.log(offSet2);*/
+   console.log(offSet2);
    cipher.decode(passwordTest2,offSet2);
-   /*console.log(cipher.decode(passwordTest2,offSet2))*/
+   console.log(cipher.decode(passwordTest2,offSet2))
 });
