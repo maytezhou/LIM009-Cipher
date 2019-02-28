@@ -1,12 +1,14 @@
 /* Acá va tu código */
 
-body {
-    background-color:#8B008B;
-    margin: 0;
-    font-family: 'Open sans', sans-serif;
-     }
 
-     #welcome{
+
+body {
+  background-image: url(img/img2.jpg);
+  background-size: 10%  ;
+
+  font-family: 'Open sans', sans-serif;
+  }
+#welcome{
         font-family: 'Impact', Charcoal, sans-serif;
         color:#000000;
      }
