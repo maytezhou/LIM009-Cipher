@@ -167,5 +167,54 @@ describe('cipher', () => {
   it('debería retornar "I" para "H" con offset -1', () => {
     assert.equal(cipher.decode("H", -1), "I");   
   });
+
+  it('debería retornar "BCDEFGHIJKLMNOPQRSTUVWXY" para "CDEFGHIJKLMNOPQRSTUVWXYZ" con offset 1', () => {
+    assert.equal(cipher.encode("CDEFGHIJKLMNOPQRSTUVWXYZ", 1), "BCDEFGHIJKLMNOPQRSTUVWXY");   
+  });
+  it('debería retornar "BCDEFGHIJKLMNOPQRSTUVWXY" para "cdefghijklmnopqrstuvwxyz" con offset 1', () => {
+    assert.equal(cipher.encode("cdefghijklmnopqrstuvwxyz", 1), "BCDEFGHIJKLMNOPQRSTUVWXY");   
+  });
+  it('debería retornar "Z" para "A" con offset 1', () => {
+    assert.equal(cipher.encode("A", 1), "Z");   
+  });
+  it('debería retornar "Z" para "B" con offset 2', () => {
+    assert.equal(cipher.encode("B", 2), "Z");   
+  });
+  it('debería retornar "Z" para "C" con offset 3', () => {
+    assert.equal(cipher.encode("C", 3), "Z");   
+  });
+  it('debería retornar "Z" para "A" con offset 27', () => {
+    assert.equal(cipher.encode("A", 27), "Z");   
+  });
+  it('debería retornar "Z" para "B" con offset 28', () => {
+    assert.equal(cipher.encode("B", 28), "Z");   
+  });
+  it('debería retornar "Z" para "C" con offset 29', () => {
+    assert.equal(cipher.encode("C", 29), "Z");   
+  });
+  it('debería retornar "Z" para "Y" con offset 25', () => {
+    assert.equal(cipher.encode("Y", 25), "Z");   
+  });
+  it('debería retornar "Z" para "Z" con offset 26', () => {
+    assert.equal(cipher.encode("Z", 26), "Z");   
+  });
+  it('debería retornar "A" para "B" con offset 1', () => {
+    assert.equal(cipher.encode("B", 1), "A");   
+  });
+  it('debería retornar "A" para "Z" con offset 25', () => {
+    assert.equal(cipher.encode("Z", 25), "A");   
+  });
+  it('debería retornar "A" para "A" con offset 26', () => {
+    assert.equal(cipher.encode("A", 26), "A");   
+  });
+  it('debería retornar "A" para "B" con offset 1', () => {
+    assert.equal(cipher.encode("B", 1), "A");   
+  });
+  it('debería retornar "A" para "C" con offset 2', () => {
+    assert.equal(cipher.encode("C", 2), "A");   
+  });
+  it('debería retornar "A" para "Z" con offset 25', () => {
+    assert.equal(cipher.encode("Z", 25), "A");   
+  });
 });
 });
