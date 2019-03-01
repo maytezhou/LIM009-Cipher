@@ -59,6 +59,12 @@ describe('cipher', () => {
   it('debería retornar "¿" para "¿" con offset -33', () => {
     assert.equal(cipher.encode("¿", -33), "¿");   
   });
+  it('debería retornar "GNKZ" para "HOLA" con offset -1', () => {
+    assert.equal(cipher.encode("HOLA", -1), "GNKZ");   
+  });
+  it('debería retornar "GNKZ" para "hola" con offset -1', () => {
+    assert.equal(cipher.encode("hola", -1), "GNKZ");   
+  });
 });
 
   describe('cipher.decode', () => {
@@ -115,6 +121,9 @@ describe('cipher', () => {
   });
   it('debería retornar "¿" para "¿" con offset -33', () => {
     assert.equal(cipher.decode("¿", -33), "¿");   
+  });
+  it('debería retornar "I" para "H" con offset -1', () => {
+    assert.equal(cipher.decode("H", -1), "I");   
   });
 });
 });
