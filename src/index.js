@@ -66,5 +66,5 @@ decodeButton2.addEventListener('click', function() {
    const offSet2=parseInt(document.getElementById('offset2').value);
   /* console.log(offSet2);*/
    cipher.decode(passwordTest2,offSet2);
-   /*console.log(cipher.decode(passwordTest2,offSet2))*/
+  /* console.log(cipher.decode(passwordTest2,offSet2))*/
 });
