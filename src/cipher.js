@@ -19,7 +19,17 @@ window.cipher ={
            else  if (passwordTest1[i].charCodeAt()>122 && passwordTest1[i].charCodeAt()<=126 &&offSet1>=0){
                  newWord1+=passwordTest1[i];
            
-         }
+            }
+           else  if (passwordTest1[i].charCodeAt()===241 &&offSet1>=0){
+                   newWord1+=(passwordTest1[i].toUpperCase());
+           }
+            else  if (passwordTest1[i].charCodeAt()===209 &&offSet1>=0){
+                  newWord1+=passwordTest1[i];
+           }
+           else if (passwordTest1[i].charCodeAt()===191 &&offSet1>=0){
+                  newWord1+=passwordTest1[i];
+           } 
+
 
          else  if (passwordTest1[i].charCodeAt()>=65 && passwordTest1[i].charCodeAt()<=90 &&offSet1<0){
             if ((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)<0){
@@ -52,15 +62,18 @@ window.cipher ={
         else if (passwordTest1[i].charCodeAt()>122 && passwordTest1[i].charCodeAt()<=126 &&offSet1<0){
                 newWord1+=passwordTest1[i];
          }
-         else  if (passwordTest1[i].charCodeAt()===241 ){
+         else  if (passwordTest1[i].charCodeAt()===241 &&offSet1<0){
                newWord1+=(passwordTest1[i].toUpperCase());
          }
-         else  if (passwordTest1[i].charCodeAt()===209 ){
+         else  if (passwordTest1[i].charCodeAt()===209 &&offSet1<0){
                 newWord1+=passwordTest1[i];
          }
-          else if (passwordTest1[i].charCodeAt()===191 ){
+          else if (passwordTest1[i].charCodeAt()===191 &&offSet1<0){
                newWord1+=passwordTest1[i];
-     } 
+        } 
+                           
+
+
         }
         return newWord1;
      } ,
@@ -106,7 +119,17 @@ window.cipher ={
                 newWord2+=passwordTest2[i];
           
       }
-               
+         else  if (passwordTest2[i].charCodeAt()===241 &&offSet2>=0){
+                 newWord2+=(passwordTest2[i].toUpperCase());
+      }
+        else  if (passwordTest2[i].charCodeAt()===209 &&offSet2>=0){
+                 newWord2+=passwordTest2[i];
+      }
+           else if (passwordTest2[i].charCodeAt()===191 &&offSet2>=0){
+                  newWord2+=passwordTest2[i];
+      }           
+
+                       
           else if (passwordTest2[i].charCodeAt()>=65 && passwordTest2[i].charCodeAt()<=90 && offSet2<0){
                newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-65)-offSet2)%26)+65);
          }
@@ -127,17 +150,19 @@ window.cipher ={
              
            }
                    
-          else if (passwordTest2[i].charCodeAt()===241 ){
+          else if (passwordTest2[i].charCodeAt()===241 &&offSet2<0 ){
                   newWord2+=(passwordTest2[i].toUpperCase());
            }
-          else if (passwordTest2[i].charCodeAt()===209 ){
+          else if (passwordTest2[i].charCodeAt()===209 &&offSet2<0 ){
                   newWord2+=passwordTest2[i];
            }
           
-          else if (passwordTest2[i].charCodeAt()===191 ){
+          else if (passwordTest2[i].charCodeAt()===191 &&offSet2<0){
                   newWord2+=passwordTest2[i];
          }
          }
          return newWord2;
          } 
        };
+
+

@@ -6,33 +6,71 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="welcome" align="center">Bienvenido!</h1>
+      <h1 id="welcome" align="center">Stand up,Speak out!</h1>
+
       <div id="first-screen">
-         <input id="user-name" type="text" placeholder="Nombre de Usuario"/>
-         <br/>
-         <input id="password" type="text" placeholder="Contraseña"/>
-         <br/>
+         <button id="make-a-denunciation">Realiza una denuncia</button>
+         <p align="center"> ¿No te has registrado aún? </p>
+         <button id="be-part-of-our-community">Sé parte de nuestra comunidad</button>
+      </div>
+
+      <div id="report-options-screen">
+         <button id="without-name">Anónima</button><br/>
+         <button id="with-name">Con Nombre del Denunciante</button><br/>
+      </div>
+          
+       <div align="center" id="claimant-data"> 
+         <p>Llena este formulario</p>
+        <input  id="full-name1" type="text" placeholder="Nombre Completo"/><br/>
+        <input id="age1" type="text" placeholder="Edad"/><br/>
+        <input id="dni-number1" type="text" placeholder="Numero de DNI"/><br/>
+        <input  id="date-of-birth1" type="text" placeholder="Fecha de Nacimiento"/><br/>
+        <input id="address" type="text" placeholder="Direccion"/><br/>
+        <input  id="email-address1" type="text" placeholder="Direccion de Email"/><br/>
+        <input id="telephone-number1" type="text" placeholder="Numero de Celular"/><br/>
+        <button id="sent-claimant-data">Enviar</button>
+      </div>   
+      <div align="center" id="known-claimant-report"> 
+            <p>Llena este formulario con el contenido de los hechos,los involucrados y la fecha exacta</p>
+           <input  id="recognized-claimant-input" type="text" placeholder="Escribe aquí"/><br/>
+           <input  id="date1" type="text" placeholder="Fecha de Hoy"/><br/>
+           <button id="sent-report">Enviar</button>
+         </div>   
+
+      <div align="center" id="anonymous-report-screen"> 
+            <p>Llena este formulario con el contenido de los hechos,los involucrados y la fecha exacta.Se detallista.</p>
+           <input  id="anonymous-input" type="text" placeholder="Reporte Anónimo"/><br/>
+           <input  id="date2" type="text" placeholder="Fecha de Hoy"/><br/>
+           <button id="sent-anonymous-report">Enviar</button>
+         </div>   
+     
+      <div id="login-screen">
+         <div id="user-and-password">
+         <input id="user-name" type="text" placeholder="Nombre de Usuario"/><br/>
+         <input id="password" type="text" placeholder="Contraseña"/><br/>
+         </div>
          <button id="login">Ingresar</button>
          <p align="center"> ¿No te has registrado aún? </p>
          <button id="create-an-account">Crear una cuenta</button>
       </div>
-      <div align="center" id="data-screen"> 
-            <p>Primer Paso:Llena este formulario</p>
-         <input  id="full-name" type="text" placeholder="Nombre Completo"/><br/>
-         <input id="age" type="text" placeholder="Edad"/><br/>
-         <input id="dni-number" type="text" placeholder="Numero de DNI"/><br/>
-         <input  id="date-of-birth" type="text" placeholder="Fecha de Nacimiento"/><br/>
-         <input id="address" type="text" placeholder="Direccion"/><br/>
-         <input  id="email-address" type="text" placeholder="Direccion de Email"/><br/>
-         <input id="telephone-number" type="text" placeholder="Numero de Celular"/><br/>
-         <button id="sent-data">Enviar</button>
-      </div>   
+      
       <div align="center" id="options-screen">
-         <p align="center">Segundo Paso:Escoge una opción para crear tu cuenta </p>
-         <p align="center" id="choose-an-option"> Escoge una opción</p>
-         <button align="center" id="encode-button1">Encriptar</button><br/>
-         <button align="center" id="decode-button1">Desencriptar</button><br/>
-      </div>
+            <p align="center" id="choose-an-option"> Escoge una opción</p>
+            <button align="center" id="encode-button1">Encriptar</button><br/>
+            <button align="center" id="decode-button1">Desencriptar</button><br/>
+         </div>
+         <div align="center" id="data-screen"> 
+               <p>Llena este formulario</p>
+              <input  id="full-name2" type="text" placeholder="Nombre Completo"/><br/>
+              <input id="age2" type="text" placeholder="Edad"/><br/>
+              <input id="dni-number2" type="text" placeholder="Numero de DNI"/><br/>
+              <input  id="date-of-birth2" type="text" placeholder="Fecha de Nacimiento"/><br/>
+              <input id="address2" type="text" placeholder="Direccion"/><br/>
+              <input  id="email" type="text" placeholder="Direccion de Email"/><br/>
+              <input id="telephone" type="text" placeholder="Numero de Celular"/><br/>
+              <button id="sent-data">Enviar</button>
+            </div>   
+     
      <div align="center" id="encode-screen">
          <p align="center">Crea un Nombre de Usuario</p>
          <input align="center" id="user-name1" type="text" placeholder="username"/><br/>

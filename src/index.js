@@ -1,15 +1,28 @@
 
 
-/* */
+
 const firstScreen=document.getElementById('first-screen');
+const loginScreen=document.getElementById('login-screen');
+const reportOptionsScreen=document.getElementById('report-options-screen');
 const optionsScreen=document.getElementById('options-screen');
 const encodeScreen=document.getElementById('encode-screen');
 const decodeScreen=document.getElementById('decode-screen');
 const dataScreen=document.getElementById('data-screen');
+const anonymousReportScreen=document.getElementById('anonymous-report-screen');
+const claimantData=document.getElementById('claimant-data');
+const knownClaimantReport=document.getElementById('known-claimant-report');
+
+
+reportOptionsScreen.style.display='none';
+loginScreen.style.display='none';
 optionsScreen.style.display='none';
 encodeScreen.style.display='none';
 decodeScreen.style.display='none';
 dataScreen.style.display='none';
+anonymousReportScreen.style.display='none';
+claimantData.style.display='none';
+knownClaimantReport.style.display='none';
+loginScreen.style.display='none';
   
 
  /*const userName=document.getElementById('user-name');
@@ -21,10 +34,50 @@ dataScreen.style.display='none';
     const passwordValue=document.getElementById('password').value;
  console.log(userNameValue,passwordValue);
   });*/
+ 
   
-const createAnAccount=document.getElementById('create-an-account');
+  
+  const makeADenunciation=document.getElementById('make-a-denunciation');
+  makeADenunciation.addEventListener('click', ()=> {
+      firstScreen.style.display = 'none';
+      reportOptionsScreen.style.display = 'block'; 
+  });
+  
+  const withoutName=document.getElementById('without-name');
+  withoutName.addEventListener('click', ()=> {
+  reportOptionsScreen.style.display = 'none'; 
+  anonymousReportScreen.style.display='block';
+});
+
+ const withName=document.getElementById('with-name');
+   withName.addEventListener('click', ()=> {
+    reportOptionsScreen.style.display = 'none'; 
+    claimantData.style.display='block';
+});
+
+
+const sentClaimantData=document.getElementById('sent-claimant-data');
+sentClaimantData.addEventListener('click', ()=> {
+  claimantData.style.display = 'none'; 
+  knownClaimantReport.style.display='block';
+});
+const sentReport=document.getElementById('sent-report');
+sentReport.addEventListener('click', ()=> {
+  knownClaimantReport.style.display='none';
+  
+});
+
+
+const bePartOfOurCommunity=document.getElementById('be-part-of-our-community');
+   bePartOfOurCommunity.addEventListener('click', ()=> {
+     firstScreen.style.display = 'none';
+    loginScreen.style.display = 'block'; 
+ });
+
+
+ const createAnAccount=document.getElementById('create-an-account');
 createAnAccount.addEventListener('click', ()=> {
-    firstScreen.style.display = 'none';
+    loginScreen.style.display = 'none';
     dataScreen.style.display = 'block'; 
 });
 

@@ -3,8 +3,8 @@
 
 
 body {
-  background-image: url(img/img2.jpg);
-  background-size: 10%  ;
+  background-image: url(ImgWoman/stronger\ together.png);
+  background-size: 100%  ;
 
   font-family: 'Open sans', sans-serif;
   }
@@ -19,6 +19,82 @@ body {
       align-items: center;
       flex-direction: column;
        }
+  #be-part-of-our-community{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Impact', Charcoal, sans-serif;
+    color: #fff;
+    background-color:#9fd5d1 ;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+#make-a-denunciation{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: 'Impact', Charcoal, sans-serif;
+  color: #fff;
+  background-color:#9fd5d1 ;
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+#with-name{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: 'Impact', Charcoal, sans-serif;
+  color: #fff;
+  background-color:#9fd5d1 ;
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+
+}
+#without-name{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: 'Impact', Charcoal, sans-serif;
+  color: #fff;
+  background-color:#9fd5d1 ;
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#report-options-screen{
+  
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  
+
+}
+
+#user-and-password{
+  display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#login-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
 
   #options-screen{
     display: flex;
@@ -41,15 +117,12 @@ body {
     flex-direction: column;
   }
 
+
   #choose-an-option {
     font-family: 'Impact', Charcoal, sans-serif;
     color:#000000;
 
-
-
   }
-
-
   #login {
     border: none;
     border-radius: 6px;
