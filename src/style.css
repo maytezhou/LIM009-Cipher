@@ -5,6 +5,7 @@
 body {
   background-image: url(ImgWoman/stronger\ together.png);
   background-size: 100%  ;
+  background-repeat: no-repeat;
 
   font-family: 'Open sans', sans-serif;
   }
