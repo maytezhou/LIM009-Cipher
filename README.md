@@ -68,7 +68,6 @@ Esta app es una forma más conveniente y fácil de relizar una denuncia.A muchas
 La idea es que Stand up,Speak Out cuente además también  con 3 secciones adicionales.Una seccion educativa,donde se suban videos educativos constantemente que les brinde información sobre todo el proceso que implica realizar una denuncia legal y  que se suban videos  de historias de superación de mujeres que fueron víctimas de violencia.Otra sección con la que contará es una sección  de noticias sobre trabajo y oportunidades laborales.Para que más y más mujeres tengan acceso a una educación y/o trabajo de calidad. Con estas tres secciones contribuiríamos de alguna manera con su desarrolo socioemocinal,psicológico y/o profesional.
 
 #### Interfaz de usuario (UI)
-
 Elegí la imagen de fondo color morado porque considero que es una imagen que representa muy bien los valores que la comunidad Stand up,Speak out representaría.Una comunidad de apoyo entre mujeres víctimas de violencia de género que buscan salir adelante y que juntas son más fuertes.
 
 #### Scripts / Archivos
