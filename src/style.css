@@ -1,14 +1,16 @@
 /* Acá va tu código */
 
-
-
-body {
+body,html {
+  height: 100%;
   background-image: url(ImgWoman/stronger\ together.png);
-  background-size: 100%  ;
-  background-repeat: no-repeat;
-
-  font-family: 'Open sans', sans-serif;
-  }
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open sans', sans-serif;
+  
+}
+ 
 #welcome{
         font-family: 'Impact', Charcoal, sans-serif;
         color:#000000;

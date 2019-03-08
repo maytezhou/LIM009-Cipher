@@ -13,6 +13,12 @@ describe('cipher', () => {
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
       assert.equal(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 33), 'HIJKLMNOPQRSTUVWXYZABCDEFG');  
     });
+    it('debería retornar "EFGHIJKLMNOPQRSTUVWXYZABCD" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 30', () => {
+      assert.equal(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 30), 'EFGHIJKLMNOPQRSTUVWXYZABCD');  
+    });
+    it('debería retornar "LSPE QYRHS" para "HOLA MUNDO" con offset 30', () => {
+      assert.equal(cipher.encode('HOLA MUNDO', 30),'LSPE QYRHS');  
+    });
     it('debería retornar " !#$%&()*+,-./:;<=>?@" para " !#$%&()*+,-./:;<=>?@" con offset 33', () => {
       assert.equal(cipher.encode(" !#$%&()*+,-./:;<=>?@", 33), " !#$%&()*+,-./:;<=>?@");  
     });
@@ -29,6 +35,9 @@ describe('cipher', () => {
        
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
       assert.equal(cipher.encode('abcdefghijklmnopqrstuvwxyz',33), 'hijklmnopqrstuvwxyzabcdefg');  
+    });
+    it('debería retornar "efghijklmnopqrstuvwxyzabcd" para "abcdefghijklmnopqrstuvwxyz" con offset 30', () => {
+      assert.equal(cipher.encode('abcdefghijklmnopqrstuvwxyz',30), 'efghijklmnopqrstuvwxyzabcd');  
     });
     it('debería retornar "{|}~" para "{|}~" con offset 33', () => {
       assert.equal(cipher.encode("{|}~", 33), "{|}~");   
@@ -134,8 +143,17 @@ describe('cipher', () => {
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',() =>{
       assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG",33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "EFGHIJKLMNOPQRSTUVWXYZABCD" con offset 30', () => {
+      assert.equal(cipher.decode('EFGHIJKLMNOPQRSTUVWXYZABCD', 30), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');  
+    });
+    it('debería retornar "HOLA MUNDO" para "LSPE QYRHS" con offset 30', () => {
+      assert.equal(cipher.decode('LSPE QYRHS', 30), 'HOLA MUNDO');  
+    });
     it('debería retornar " !#$%&()*+,-./:;<=>?@" para " !#$%&()*+,-./:;<=>?@" con offset 33', () => {
       assert.equal(cipher.decode(" !#$%&()*+,-./:;<=>?@", 33), " !#$%&()*+,-./:;<=>?@");  
+    });
+    it('debería retornar "123" para "456" con offset 33', () => {
+      assert.equal(cipher.decode("456",33), "123");  
     });
     it('debería retornar "quotes1" para "quotes1" con offset 33', () => {
       const quotes1= '!' +'#$%&"()*+,-./';
@@ -146,6 +164,9 @@ describe('cipher', () => {
     });
     it('debería retornar "tuvwxyzabcdefghijklmnopqrs" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
       assert.equal(cipher.decode('abcdefghijklmnopqrstuvwxyz', 33), 'tuvwxyzabcdefghijklmnopqrs');  
+    });
+    it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "efghijklmnopqrstuvwxyzabcd" con offset 30', () => {
+      assert.equal(cipher.decode('efghijklmnopqrstuvwxyzabcd', 30), 'abcdefghijklmnopqrstuvwxyz');  
     });
     it('debería retornar "{|}~" para "{|}~" con offset 33', () => {
       assert.equal(cipher.decode("{|}~", 33), "{|}~");   
