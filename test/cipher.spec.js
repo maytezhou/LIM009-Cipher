@@ -34,7 +34,7 @@ describe('cipher', () => {
       assert.equal(cipher.encode("{|}~", 33), "{|}~");   
     });
     it('debería retornar "ñ" para "ñ" con offset 33', () => {
-      assert.equal(cipher.encode('ñ', 33), 'Ñ');  
+      assert.equal(cipher.encode('ñ', 33), 'ñ');  
     });
     it('debería retornar "Ñ" para "Ñ" con offset 33', () => {
       assert.equal(cipher.encode('Ñ', 33), 'Ñ');  
@@ -66,7 +66,7 @@ describe('cipher', () => {
       assert.equal(cipher.encode("{|}~", -33), "{|}~");   
     });
     it('debería retornar "ñ" para "ñ" con offset -33', () => {
-      assert.equal(cipher.encode('ñ', -33), 'Ñ');  
+      assert.equal(cipher.encode('ñ', -33), 'ñ');  
     });
     it('debería retornar "Ñ" para "Ñ" con offset -33', () => {
       assert.equal(cipher.encode('Ñ', -33), 'Ñ');  
@@ -151,7 +151,7 @@ describe('cipher', () => {
       assert.equal(cipher.decode("{|}~", 33), "{|}~");   
     });
     it('debería retornar "ñ" para "ñ" con offset 33', () => {
-      assert.equal(cipher.decode('ñ', 33), 'Ñ');  
+      assert.equal(cipher.decode('ñ', 33), 'ñ');  
     });
    
     it('debería retornar "Ñ" para "Ñ" con offset 33', () => {
@@ -208,11 +208,11 @@ describe('cipher', () => {
     it('debería retornar "Y" para "Z" con offset 1', () => {
       assert.equal(cipher.decode("Z", 1), "Y");   
     });
-    it('debería retornar "T" para "u" con offset 1', () => {
-      assert.equal(cipher.decode("u", 1), "T");   
+    it('debería retornar "t" para "u" con offset 1', () => {
+      assert.equal(cipher.decode("u", 1), "t");   
     });
-    it('debería retornar "Y" para "z" con offset 1', () => {
-      assert.equal(cipher.decode("z", 1), "Y");   
+    it('debería retornar "y" para "z" con offset 1', () => {
+      assert.equal(cipher.decode("z", 1), "y");   
     });
 
 
@@ -240,7 +240,7 @@ describe('cipher', () => {
     assert.equal(cipher.decode("{|}~", -33), "{|}~");   
   });
   it('debería retornar "ñ" para "ñ" con offset -33', () => {
-    assert.equal(cipher.decode('ñ', -33), 'Ñ');  
+    assert.equal(cipher.decode('ñ', -33), 'ñ');  
   });
   it('debería retornar "Ñ" para "Ñ" con offset -33', () => {
     assert.equal(cipher.decode('Ñ', -33), 'Ñ');  

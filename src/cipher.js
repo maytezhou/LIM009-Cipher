@@ -39,24 +39,24 @@ window.cipher ={
 
          else  if (passwordTest1[i].charCodeAt()>=65 && passwordTest1[i].charCodeAt()<=90 &&offSet1<0){
             if ((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)<0){
-               newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+26)+65);
+               newWord1+=String.fromCharCode((((((passwordTest1[i].charCodeAt())-65)+offSet1)%26)+26)+65);
              }
             if (((((passwordTest1[i].charCodeAt()-65)+offSet1)%26))>0){
-                newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
+                newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt())-65)+offSet1)%26)+65);
              }
              if ((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)==0){
-                newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-65)+offSet1)%26)+65);
+                newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt())-65)+offSet1)%26)+65);
              }
          }
-       else if (passwordTest1[i].charCodeAt()>=97 && passwordTest1[i].charCodeAt()<=122  && offSet1<0){
-            if((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)<0){
-               newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)+26)+97);
+       else if (passwordTest1[i].charCodeAt()>=97 && passwordTest1[i].charCodeAt()<=122 &&offSet1<0){
+            if(((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)<0){
+               newWord1+=String.fromCharCode((((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)+26)+97);
             }
-            if ((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)>0){
-              newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)+97);
+            if (((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)>0){
+              newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)+97);
             }
-            if ((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)==0){
-             newWord1+=String.fromCharCode((((passwordTest1[i].charCodeAt()-97)+offSet1)%26)+97);
+            if (((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)==0){
+             newWord1+=String.fromCharCode(((((passwordTest1[i].charCodeAt())-97)+offSet1)%26)+97);
             }
           }
 
