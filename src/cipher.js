@@ -140,13 +140,13 @@ window.cipher ={
                   else if (passwordTest2[i].charCodeAt()>=48&&passwordTest2[i].charCodeAt()<=57&&offSet2>=0){
                  newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)+48);
 
-                   if((((passwordTest2[i].charCodeAt()-48)+offSet2)%10)<0){
+                   if((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)<0){
                      newWord2+=String.fromCharCode(((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)+10)+48);
                 }
-                 if ((((passwordTest2[i].charCodeAt()-48)+offSet2)%10)>0){
+                 if ((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)>0){
                     newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)+48);
                 }
-                       if ((((passwordTest2[i].charCodeAt()-48)+offSet2)%10)==0){
+                 if ((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)==0){
                     newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)+48);
                 }
 
@@ -181,7 +181,7 @@ window.cipher ={
             newWord2+=passwordTest2[i];
        }
        else if (passwordTest2[i].charCodeAt()>=48&&passwordTest2[i].charCodeAt()<=57&&offSet2<0){
-        newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-48)-offSet2)%10)+48);
+        newWord2+=String.fromCharCode((((passwordTest2[i].charCodeAt()-48)-(offSet2))%10)+48);
        }
              else if (passwordTest2[i].charCodeAt()>57&&passwordTest2[i].charCodeAt()<65&&offSet2<0){
              newWord2+=passwordTest2[i];
