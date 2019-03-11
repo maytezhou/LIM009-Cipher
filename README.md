@@ -1,60 +1,3 @@
-# Cifrado César
-
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
-
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
-
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
-
-- La letra A se cifra como D.
-- La palabra CASA se cifra como FDVD.
-- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-
-En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
-
-## Resumen del proyecto
-
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
-
-Algunas ideas de ejemplo:
-
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
-
-
-## Consideraciones generales
-
-- Este proyecto se debe resolver de manera individual.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
-- Tiempo para completarlo: El proyecto dura 2 semanas, trabaja con sprints y planificando tus tareas.
-
-## Objetivos de aprendizaje
-
-En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
-
-- Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-- Permitir al usuario interactuar (**eventos del DOM**) y hacer algo cuando ocurran dichos eventos (cifrar/descifrar).
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo** (bucles, condicionales, ...).
-- Actualizar la pantalla con los resultados (**manipular el DOM**).
-- **Implementar funciones** dada una descripción de su comportamiento.
-- Verificar tu implementación con **pruebas unitarias**.
-- Entender las **necesidades del usuario** y cómo proponer una solución.
-- Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-
-## Parte Obligatoria
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
-
-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
 #### Definición del producto
 
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
@@ -64,10 +7,11 @@ Los principales usuarios de la app Stand up,Speak out, son mujeres de 15 a 49 a�
 - Cuáles son los objetivos de estos usuarios en relación con tu producto.
 Los objetivos de los usuarios son hacer denuncias principalmente de manera anónima,aunque también tienen la posibilidad de colocar sus nombres y apellidos.Los que realizan la denuncia pueden ser la propias mujeres víctimas de violencia de género o personas que conocen el caso de alguna mujer que esta pasando por ese tipo de situación.Además,los usuarios también tienen el objetivo de ser parte de una comunidad que luche contra la violencia de género.
 - Cómo crees que el producto que estás creando está resolviendo sus problemas.
-Esta app es una forma más conveniente y fácil de relizar una denuncia.A muchas mujeres le es muy difícil tomar la decisión de ir a una comisaría para denunciar a su agresores.Por otro lado muchas personas que tienen conocidos que son víctimas de violencia prefieren mantenersee en silencio por miedo a represalias.La idea es cuando la persona haga clic en enviar ,al momento de enviar su denuncia,el mensaje sea encriptado,que el texto no quede en el móvil y que nadie pueda ver lo que ha escrito.La idea es también que Stand up,Speak out vaya de la mano con la creación de una ley que salvaguarde la integridad de todas las personas que realizan una denuncia de manera anónima y las que no también.Por otro lado,aquellas personas que desean ser parte de la comunidad,al momento de crear su contraseña para registarse,primero tiene que escoger una opcion entre cifrar y decifrar.Para que asi,de esa manera sus cuentas tengan un nivel alto de seguridad y proteger la confidencialidad de cada una nuestras usuarias.
+Esta app es una forma más conveniente y fácil de relizar una denuncia.A muchas mujeres le es muy difícil tomar la decisión de ir a una comisaría para denunciar a sus agresores.Por otro lado muchas personas que tienen conocidos que son víctimas de violencia prefieren mantenersee en silencio por miedo a represalias.La idea es quecuando la persona haga clic en enviar ,al momento de enviar su denuncia,el mensaje sea encriptado,que el texto no quede en el móvil y que nadie pueda ver lo que ha escrito.La idea es también que Stand up,Speak out vaya de la mano con la creación de una ley que salvaguarde la integridad de todas las personas que realizan una denuncia de manera anónima y las que no también.Por otro lado,aquellas personas que desean ser parte de la comunidad,al momento de crear su contraseña para registarse,primero tiene que escoger una opcion entre cifrar y decifrar.Para que asi,de esa manera sus cuentas tengan un nivel alto de seguridad y sea más fácil proteger la confidencialidad de cada una nuestras usuarias.
 La idea es que Stand up,Speak Out cuente además también  con 3 secciones adicionales.Una seccion educativa,donde se suban videos educativos constantemente que les brinde información sobre todo el proceso que implica realizar una denuncia legal y  que se suban videos  de historias de superación de mujeres que fueron víctimas de violencia.Otra sección con la que contará es una sección  de noticias sobre trabajo y oportunidades laborales.Para que más y más mujeres tengan acceso a una educación y/o trabajo de calidad. Con estas tres secciones contribuiríamos de alguna manera con su desarrolo socioemocinal,psicológico y/o profesional.
 
 #### Interfaz de usuario (UI)
+<<<<<<< HEAD
 Elegí la imagen de fondo color morado porque considero que es una imagen que representa muy bien los valores que la comunidad Stand up,Speak out representaría.Una comunidad de apoyo entre mujeres víctimas de violencia de género que buscan salir adelante y que juntas son más fuertes.
 
 #### Scripts / Archivos
@@ -255,38 +199,38 @@ Desarrollo Front-end:
 * [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
 * [Documentación de NPM](https://docs.npmjs.com/)
+=======
 
-Herramientas:
+Elegí la imagen de fondo color morado porque considero que es una imagen que representa muy bien los valores que la comunidad Stand up,Speak out representaría.Una comunidad de apoyo entre mujeres víctimas de violencia de género que buscan salir adelante y unirse a una misma causa porque saben que juntas son más fuertes.
+El diseño es simple y sencillo porque da una sensación al usuario de seguridad,claridad, y precisión.
+>>>>>>> 03355dfd1c1b71ea00a6f1be446de32d9ebeb0a5
 
-- [GitHub y GitHub Pages](https://guides.github.com/)
-- [Guía de Scrum](https://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-es.pdf): solamente para comenzar a entender cómo organizar tu trabajo.
+
 
 ## Checklist
 
-Esta sección está  para ayudarte a llevar un control de lo que vas completando.
 
-### Parte Obligatoria
 
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [✔] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [✔] `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
+* [✔] `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
+* [✔] Usa VanillaJS.
+* [✔] No utiliza `this`.
+* [✔] Implementa `cipher.encode`.
+* [✔] Implementa `cipher.decode`.
+* [✔] Pasa linter con configuración provista.
+* [✔] Pasa pruebas unitarias.
+* [✔] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [✔] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [✔] Interfaz permite escribir un texto para ser cifrado.
+* [✔] Interfaz muestra el resultado del cifrado correctamente.
+* [✔] Interfaz permite escribir un texto para ser descifrado.
+* [✔] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [✔] Cifra/descifra minúsculas
+* [✔] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [✔] Permite usar un `offset` negativo.
