@@ -10,213 +10,32 @@ body,html {
     font-family: 'Open sans', sans-serif;
   
 }
- 
-#welcome{
-        font-family: 'Impact', Charcoal, sans-serif;
-        color:#000000;
-     }
-
-  #first-screen {
+   .justifying{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center;
        }
-  #be-part-of-our-community{
+  .style-color{
     border: none;
     border-radius: 6px;
     padding: 10px 20px;
     font-size: 25px;
     font-family: 'Impact', Charcoal, sans-serif;
     color: #fff;
-    background-color:#9fd5d1 ;
+    background-color:#f08080 ;
     margin: auto;
     display: flex; 
     justify-content: center;
     flex-direction: column;
 }
-#make-a-denunciation{
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 25px;
+.paragraph-style{
+  color:#000000;
   font-family: 'Impact', Charcoal, sans-serif;
-  color: #fff;
-  background-color:#9fd5d1 ;
-  margin: auto;
-  display: flex; 
-  justify-content: center;
-  flex-direction: column;
-}
-#with-name{
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 25px;
-  font-family: 'Impact', Charcoal, sans-serif;
-  color: #fff;
-  background-color:#9fd5d1 ;
-  margin: auto;
-  display: flex; 
-  justify-content: center;
-  flex-direction: column;
 
-}
-#without-name{
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 25px;
-  font-family: 'Impact', Charcoal, sans-serif;
-  color: #fff;
-  background-color:#9fd5d1 ;
-  margin: auto;
-  display: flex; 
-  justify-content: center;
-  flex-direction: column;
+
 
 }
 
-#report-options-screen{
-  
-  margin: auto;
-  display: flex; 
-  justify-content: center;
-  
-
-}
-
-#user-and-password{
-  display: flex;
-    justify-content: center;
-    margin: auto;
-}
-#login-screen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-}
-
-  #options-screen{
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-
-#create-an-account {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color:#9fd5d1 ;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-  }
-
-
-  #choose-an-option {
-    font-family: 'Impact', Charcoal, sans-serif;
-    color:#000000;
-
-  }
-  #login {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color:#9fd5d1 ;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-  }
-
-    #encode-button1  {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color: #ff0080;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-
-  }
-  
-  
-  #decode-button1  {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color: #ff0080;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-  }
-
-  #encode-button2  {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color: #ff0080;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-
-  }
-
-  #decode-button2  {
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color: #ff0080;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-  }
-
-  #data-screen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-
-
-
-  }
-  #encode-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-  
-  }
-
- #decode-screen {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-         }
+   
