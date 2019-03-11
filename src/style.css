@@ -3,36 +3,42 @@
 body,html {
   height: 100%;
   background-image: url(ImgWoman/stronger\ together.png);
-    height: 100%;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Open sans', sans-serif;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open sans', sans-serif;
   
 }
-   .justifying{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
+.justifying{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
        }
-  .style-color{
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-family: 'Impact', Charcoal, sans-serif;
-    color: #fff;
-    background-color:#f08080 ;
-    margin: auto;
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
+.style-color{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: 'Impact', Charcoal, sans-serif;
+  color: #fff;
+  background-color:#f08080 ;
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
 }
 .paragraph-style{
   color:#000000;
   font-family: 'Impact', Charcoal, sans-serif;
+}
+.footer-style{
+  font-size: 11px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  
 }
 
    
